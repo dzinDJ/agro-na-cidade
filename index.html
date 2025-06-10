@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agro na Cidade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <div class="container">
       <h1>Agro na Cidade</h1>
-      <p>Transformando espaços urbanos em fontes de alimento e sustentabilidade</p>
+      <p>Transformando espaços urbanos em fontes de alimento e vida</p>
     </div>
   </header>
 
   <main>
     <section class="introducao">
       <div class="container">
-        <h2>O que é Agricultura Urbana?</h2>
-        <p>A agricultura urbana envolve o cultivo de alimentos em áreas urbanas, utilizando espaços como telhados, quintais, terrenos baldios e até mesmo ambientes internos. Essa prática visa promover a segurança alimentar, reduzir a pegada de carbono e fortalecer a comunidade local.</p>
-        <img src="imagens/horta-urbana.jpg" alt="Horta urbana comunitária">
+        <h2>🌱 O que é Agricultura Urbana?</h2>
+        <p>A prática de cultivar alimentos e criar animais dentro ou ao redor das cidades, promovendo segurança alimentar, economia circular e conexão comunitária.</p>
+        <img src="imagens/horta1.jpg" alt="Horta urbana comunitária" />
       </div>
     </section>
 
     <section class="beneficios">
       <div class="container">
-        <h2>Benefícios da Agricultura Urbana</h2>
+        <h2>🌟 Benefícios da Agricultura Urbana</h2>
         <ul>
-          <li><strong>Segurança Alimentar:</strong> Produção local de alimentos frescos e saudáveis.</li>
-          <li><strong>Redução de Desperdício:</strong> Aproveitamento de resíduos orgânicos para compostagem.</li>
-          <li><strong>Inclusão Social:</strong> Engajamento comunitário e geração de empregos.</li>
-          <li><strong>Benefícios Ambientais:</strong> Melhoria da qualidade do ar e redução das ilhas de calor urbanas.</li>
+          <li>🍅 Alimentos frescos acessíveis</li>
+          <li>♻️ Redução do desperdício orgânico</li>
+          <li>👩‍🌾 Emprego e renda para comunidades</li>
+          <li>🌿 Menos poluição e mais verde nas cidades</li>
         </ul>
-        <img src="imagens/beneficios.jpg" alt="Benefícios da agricultura urbana">
+        <img src="imagens/beneficios.jpg" alt="Benefícios da agricultura urbana" />
       </div>
     </section>
 
     <section class="exemplos">
       <div class="container">
-        <h2>Exemplos no Brasil</h2>
-        <p>Iniciativas como a Agro Favela Refazenda em Paraisópolis, São Paulo, demonstram o impacto positivo da agricultura urbana. Utilizando técnicas como cultivo aeropônico, essas hortas comunitárias não apenas fornecem alimentos, mas também capacitam moradores e promovem a sustentabilidade local.</p>
-        <img src="imagens/exemplos.jpg" alt="Exemplos de hortas urbanas no Brasil">
+        <h2>📌 Exemplos no Brasil</h2>
+        <p>De São Paulo a Recife, hortas urbanas transformam bairros. Veja como esses projetos unem alimentação, educação ambiental e protagonismo social.</p>
+        <img src="imagens/exemplos.jpg" alt="Exemplos de hortas urbanas no Brasil" />
+      </div>
+    </section>
+
+    <section class="galeria">
+      <div class="container">
+        <h2>📸 Galeria de Projetos</h2>
+        <div class="grid-galeria">
+          <img src="imagens/horta1.jpg" alt="Horta 1" onclick="abrirLightbox(this)" />
+          <img src="imagens/horta2.jpg" alt="Horta 2" onclick="abrirLightbox(this)" />
+          <img src="imagens/horta3.jpg" alt="Horta 3" onclick="abrirLightbox(this)" />
+          <img src="imagens/horta4.jpg" alt="Horta 4" onclick="abrirLightbox(this)" />
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Agro na Cidade | Desenvolvido por Denis </p>
+      <p>&copy; 2025 Agro na Cidade | Desenvolvido por [Seu Nome]</p>
     </div>
   </footer>
+
+  <div id="lightbox" onclick="fecharLightbox()">
+    <img id="lightbox-img" src="" alt="imagem ampliada">
+  </div>
+
+  <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
