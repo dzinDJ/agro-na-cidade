@@ -1,64 +1,79 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  background: #f5f9f5;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
 }
 
+/* Cabeçalho */
 header {
-  background: #4caf50;
+  background-color: #388e3c;
   color: white;
-  padding: 2em 1em;
+  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
+header p {
+  font-size: 1.2rem;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Seções */
 section {
-  padding: 2em 10%;
-  border-bottom: 1px solid #ddd;
-  background: white;
+  margin: 40px 0;
 }
 
 section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #388e3c;
-  margin-bottom: 0.5em;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 section img {
-  max-width: 100%;
-  margin-top: 1em;
+  width: 100%;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Lista de benefícios */
 ul {
-  list-style: none;
-  padding-left: 0;
+  list-style-type: none;
 }
 
 ul li {
-  padding-left: 1.2em;
-  margin: 0.5em 0;
-  position: relative;
+  margin-bottom: 10px;
 }
 
+/* Rodapé */
 footer {
+  background-color: #388e3c;
+  color: white;
   text-align: center;
-  padding: 1em;
-  background: #e8f5e9;
-  font-size: 0.9em;
-}
-
-a {
-  color: #2e7d32;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
