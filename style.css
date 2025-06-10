@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, #4caf50, #81c784);
+  background: linear-gradient(to right, #0b5bb6, #81c784);
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -28,7 +28,7 @@ section {
 }
 
 section h2 {
-  color: #2e7d32;
+  color: #1723ca;
   margin-bottom: 15px;
 }
 
